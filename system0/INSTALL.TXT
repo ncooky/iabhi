@@ -1,0 +1,15 @@
+This document is far from completed. It's just a quick guide for installing BytesFall Explorer.
+If you are interested in writing a better guide please contact me at ovidio AT users.sourceforge.net.
+
+
+1. Uncompress the downloaded file in a directory inside your web server.
+2. Create a new database (empty) inside your DB server. Note that currently only MySQL and 
+PostgreSQL are working, SQLite is presenting some problems.
+3. Point your browser to the url where bfExplorer is located.
+4. Follow the wizard to configure the system.
+5. Remove or rename the 'install' directory.
+6. Now you can login with the user 'admin' and password 'admin'. Later you can go to the control panel to
+administer the users, groups and permissions (at least you should change the admin password).
+7. Have fun.
+
+Ovidio

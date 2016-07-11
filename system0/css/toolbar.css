@@ -1,0 +1,187 @@
+body {
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+/*
+	Toolbar
+*/
+
+.TB_ToolbarSet, .TB_Expand, .TB_Collapse
+{
+    cursor: default;
+    background-color: ThreeDFace;
+}
+
+.TB_ToolbarSet
+{
+    border-top: ThreeDFace 1px outset;
+    border-bottom: ThreeDFace 1px outset;
+}
+
+.TB_ToolbarSet TD
+{
+    font-size: 9px;
+    font-family: 'Microsoft Sans Serif' , Tahoma, Arial, Verdana, Sans-Serif;
+}
+
+.TB_Toolbar
+{
+    display: inline-table;	/* inline = Opera jumping buttons bug */
+    background-color: ThreeDFace;
+}
+
+.TB_Separator
+{
+    width: 1px;
+    height: 16px;
+    margin: 2px;
+    background-color: ThreeDDarkShadow;
+}
+
+.TB_Start
+{
+    background-image: url(../images/toolbar/toolbar.start.gif);
+    margin: 2px;
+    width: 3px;
+    background-repeat: no-repeat;
+    height: 16px;
+    background-color: ThreeDFace;
+}
+
+.TB_End
+{
+    display: none;
+    background-color: ThreeDFace;
+}
+
+.TB_ExpandImg
+{
+    background-image: url(../images/toolbar/toolbar.expand.gif);
+    background-repeat: no-repeat;
+}
+
+.TB_CollapseImg
+{
+    background-image: url(../images/toolbar/toolbar.collapse.gif);
+    background-repeat: no-repeat;
+}
+
+.TB_SideBorder
+{
+    background-color: ThreeDDarkShadow;
+}
+
+.TB_Expand, .TB_Collapse
+{
+    padding: 2px 2px 2px 2px;
+    border: ThreeDFace 1px outset;
+}
+
+.TB_Collapse
+{
+    width: 5px;
+}
+
+.TB_Break
+{
+    height: 24px; /* IE needs the height to be set, otherwise no break */
+}
+
+/*
+	Toolbar Button
+*/
+
+.TB_Button_On, .TB_Button_Off, .TB_Button_On_Over, .TB_Button_Off_Over, .TB_Button_Disabled
+{
+    border: ThreeDFace 1px solid; /* This is the default border */
+    height: 16px; /* The height is necessary, otherwise IE will not apply the alpha */
+}
+
+.TB_Button_On
+{
+    border: #316ac5 1px solid;
+    background-color: #c1d2ee;
+}
+
+.TB_Button_On_Over, .TB_Button_Off_Over
+{
+    border: #316ac5 1px solid;
+    background-color: #dff1ff;
+}
+
+.TB_Button_Off
+{
+    filter: alpha(opacity=70); /* IE */
+    opacity: 0.70; /* Safari, Opera and Mozilla */
+    background-color: ThreeDFace;
+}
+
+.TB_Button_Disabled
+{
+    filter: gray() alpha(opacity=30); /* IE */
+    opacity: 0.30; /* Safari, Opera and Mozilla */
+}
+
+.TB_Button_Padding
+{
+    visibility: hidden;
+    width: 3px;
+    height: 16px;
+}
+
+.TB_Button_Image
+{
+    overflow: hidden;
+    width: 16px;
+    height: 16px;
+    margin: 3px;
+    background-repeat: no-repeat;
+}
+
+.TB_Button_Image img
+{
+    position: relative;
+}
+
+.TB_Button_Off .TB_Button_Text
+{
+   	background-color: ThreeDFace;  /* Needed because of a bug on Clear Type */
+}
+
+.TB_ConnectionLine
+{
+    background-color: #ffffff;
+    height: 1px;
+    margin-left: 1px;   /* ltr */
+    margin-right: 1px;  /* rtl */
+}
+
+.TB_Text
+{
+	height: 16px;
+}
+
+.TB_Background
+{
+    background-color: ThreeDFace;
+}
+
+.TB_Input { 
+	width: 160px;
+	border: 1px solid #AAAAAA;
+	border-color: #888 #AAA #AAA #888;
+	margin-bottom: 2px;
+	-moz-box-sizing: border-box;
+}
+
+.TB_Button_Off .TB_Text
+{
+   	background-color: ThreeDFace ;  /* Needed because of a bug on ClearType */
+}
+
+.TB_Button_On_Over .TB_Text
+{
+   	background-color: #dff1ff ;  /* Needed because of a bug on ClearType */
+}

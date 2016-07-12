@@ -112,6 +112,7 @@ $route['resetpassword/(:any)'] = 'admin/users/getPassword'; //
 $route['login'] = "hoosk_default/login"; 
 $route['logout'] = "hoosk_default/logout"; 
 $route['login/check'] = "hoosk_default/loginCheck";
+$route['daftar'] = "hoosk_default/daftar";
 $route['category/(:any)'] = "hoosk_default/category";
 $route['article/(:any)'] = "hoosk_default/article";
 

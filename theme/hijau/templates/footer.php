@@ -3,7 +3,7 @@
         <div class="modal-content">
           <div class="modal-header" style="padding: 5px;">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" style="text-align: center;" id="LoginModalLbl">Masuk ke IABHI</h4>
+            <h4 class="modal-title" style="text-align: center;" id="LoginModalLbl">Log in anggota IABHI</h4>
           </div>
           <div class="modal-body">
             
@@ -12,9 +12,11 @@
                     <div class="col-md-6 col-md-offset-3">
                    
                         <div class="form-group">
+                            <label for="username">Nama Pengguna</label>
                             <input class="form-control" id="username" name="username" placeholder="username anda">
                         </div> 
                         <div class="form-group">
+                            <label for="password">Sandi</label>
                             <input type="password" class="form-control" id="password" name="password" placeholder="kata kunci anda">
                         </div>
                         <div class="form-group">
@@ -29,7 +31,7 @@
             </form>
           </div>
           <div class="modal-footer " style="text-align: center;">
-                Tidak Memiliki Akun? <a href="#">Daftar &raquo;</a>
+                Tidak Memiliki Akun? <a href="<?php echo BASE_URL.'/daftar';  ?>">Daftar &raquo;</a>
           </div>
         </div>
       </div>

@@ -74,6 +74,56 @@ class Hoosk_default extends CI_Controller {
 		$this->load->view('templates/error', $this->data);
 	}
 
+    public function daftar()
+	{
+
+		//Load the form helper
+		$this->load->helper('form');
+        $this->load->helper('captcha');
+        $vals = array(
+            //'word'	=> 'Random word',
+            'img_path'	=> './captcha/',
+            'img_url'	=> BASE_URL.'/captcha/',
+            'font_path'	=> THEME_FOLDER.'/fonts/socicon-webfont.ttf',
+            'img_width'	=> '150',
+            'img_height' => 40,
+            'expiration' => 7200
+            );
+        
+        $this->data['cap'] = create_captcha($vals);
+               
+		$this->data['page']['pageTitle']="Menjadi member IABHI";
+		$this->data['header'] = $this->load->view('templates/header', $this->data, true);
+		$this->data['footer'] = $this->load->view('templates/footer', '', true);
+		$this->load->view('templates/signup', $this->data);
+	}
+    
+    public function cekdaftar()
+	{
+
+		Usercontrol_helper::is_logged_in($this->session->userdata('userName'));
+		//Load the form validation library
+		$this->load->library('form_validation');
+		//Set validation rules
+		$this->form_validation->set_rules('username', 'username', 'trim|alpha_dash|required|is_unique[user.userName]');
+		$this->form_validation->set_rules('firstname', 'Nama Depan', 'trim|required');        
+		$this->form_validation->set_rules('email', 'alamat email', 'trim|required|valid_email|is_unique[user.email]');
+		$this->form_validation->set_rules('password', 'password', 'trim|required|min_length[4]|max_length[32]');
+		$this->form_validation->set_rules('con_password', 'confirm password','trim|required|matches[password]');
+
+		
+		if($this->form_validation->run() == FALSE) {
+			//Validation failed
+			$this->addUser();
+		}  else  {
+			//Validation passed
+			//Add the user
+			$this->Hoosk_model->createUser();
+			//Return to user list
+			redirect('/admin/users', 'refresh');
+	  	}
+	}    
+
     public function login()
 	{
 
@@ -85,6 +135,7 @@ class Hoosk_default extends CI_Controller {
 		$this->load->view('templates/login', $this->data);
 	}
 	
+    
 	public function loginCheck()
  	{
 		$username=$this->input->post('username');

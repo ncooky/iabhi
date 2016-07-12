@@ -1,3 +1,20 @@
+@font-face {
+  font-family: 'LucidaGrande';
+  src: url('../fonts/LucidaGrande.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.form-group {
+   margin-bottom: 0px;
+}
+
+.form-horizontal .control-label {
+    padding-top: 7px;
+    margin-bottom: 0;
+    text-align: left;
+}
+
 .jumbotron.errorpadding {padding-top:125px;padding-bottom:60px;background:#eee;}
 .jumbotron.jumbo-padding {/* padding-top:125px;padding-bottom:60px;*/background:#eee;}
 /* .jumbotron.slider-padding {padding:0;margin-top:60px;}*/ 
@@ -17,8 +34,8 @@
     line-height: 1.66667;
     font-weight: 400;
     letter-spacing: normal;
-    background-color: #eeeeee;
-    color: #666;
+    background-color: #CDCDCD;
+    color: #3f3f3f;
     min-width: 1024px;
     overflow: hidden;
     position: relative;
@@ -32,7 +49,7 @@ p {
     text-align: justify;
 }
 #love a{
-    color: #666;
+    color: #3f3f3f;
     text-decoration: none;
 }
 #love .directory a:hover{
@@ -46,16 +63,16 @@ p {
     line-height: 1.66667;
     font-weight: 600;
     letter-spacing: normal;
-    color: #333;
+    color: #3f3f3f;
     margin: 0;
-    font-family: "proxima-nova-1","proxima-nova-2","Helvetica Neue",Arial,sans-serif;    
+    font-family: 'LucidaGrande';    
 }
 .love{
     font-size: 16px;
 }
 
 .logo{
-    font-size: 12px;    
+    font-size: 11.4px;    
 }
 
 .low-footer{
@@ -271,7 +288,7 @@ p {
     right: -1px;
     bottom: -1px;
     border: 1px solid black;
-    color: #ccc;
+    color: #3f3f3f;
     background: #222;
     background: rgba(10,10,20,.85);
     padding: 10px 12px;
@@ -288,17 +305,17 @@ p {
     font-weight: 700;
     line-height: 128%;
     font-size: 15px;
-    color: #444;
+    color: #3f3f3f;
     text-shadow: 0 1px 0 white;
     margin-bottom: 0;    
         
 }
 
 .bg-entry h2 a {
-    color: #333;
+    color: #3f3f3f;
     text-decoration: none;
     text-align: justify;
-    font-family: "proxima-nova-1","proxima-nova-2","Helvetica Neue",Arial,sans-serif!important;
+    font-family: 'LucidaGrande'!important;
 }
 
 .bg-entry-header span {
@@ -316,12 +333,76 @@ p {
         box-shadow: 0 0 5px #A7D4E3, 0 1px 0 rgba(255, 255, 255, 1) inset;
 }
 
-.carousel-caption {
-    bottom: -10px;
-    color: #fff;
-    text-rendering: optimizelegibility;
-    text-shadow: 0 0 5px rgba(0,0,0,.8);
+
+@media screen and (max-width:768px) {
+    .carousel-caption {
+        bottom: -20px;
+        color: #fff;
+        text-rendering: optimizelegibility;
+        text-shadow: 0 0 5px rgba(0,0,0,.8);
+        background-color: rgba(63,63,63,0.4);
+        width: 100%;
+        left: 0px;
+        padding-top: 0px;
+    } 
+    
+    .carousel-inner {
+        height: 300px;
+    }
 }
+
+@media screen and (max-width:650px) {
+    .carousel-caption {
+        bottom: 40px;
+        color: #fff;
+        text-rendering: optimizelegibility;
+        text-shadow: 0 0 5px rgba(0,0,0,.8);
+        background-color: rgba(63,63,63,0.4);
+        width: 100%;
+        left: 0px;
+        padding-top: 0px;
+    }
+    .carousel-caption h3{
+        font-size: 11px;
+    }
+    .carousel-caption p{
+        font-size: 11px;
+    }
+    .carousel-inner {
+        max-height: 250px;
+    }    
+    .carousel-inner > .item > a > img {
+        margin: 0px auto 0 !important;
+        width: 100%;
+    }    
+}
+
+@media screen and (max-width:480px) {
+    .carousel-caption {
+        bottom: -10px;
+        color: #fff;
+        text-rendering: optimizelegibility;
+        text-shadow: 0 0 5px rgba(0,0,0,.8);
+        background-color: rgba(63,63,63,0.4);
+        width: 100%;
+        left: 0px;
+        padding-top: 0px;
+    }
+    .carousel-caption h3{
+        font-size: 10px;
+    }
+    .carousel-caption p{
+        font-size: 10px;
+    }
+    .carousel-inner {
+        max-height: 154px;
+    }    
+    .carousel-inner > .item > a > img {
+        margin: 0px auto 0 !important;
+        width: 100%;
+    }    
+}
+
 .carousel-caption p{
     text-align: center;
 }
@@ -356,7 +437,7 @@ p {
     border-right: 1px solid #eee;
 }
 .bg-list .bg-entry .bg-entry-header span, .entry-article .bg-entry-header span {
-    font-size: 12px;
+    font-size: 11px;
     color: #444;
 }
 

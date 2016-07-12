@@ -21,9 +21,11 @@
         					}
         				} ?>
                         <div class="form-group">
+                            <label for="username">Nama Pengguna</label>
                             <input class="form-control" id="username" name="username" placeholder="username anda">
                         </div> 
                         <div class="form-group">
+                            <label for="password">Sandi</label>
                             <input type="password" class="form-control" id="password" name="password" placeholder="kata kunci anda">
                         </div>
                         <div class="form-group">
@@ -38,7 +40,7 @@
             </form>
           </div>
           <div class="modal-footer " style="text-align: center;">
-                Tidak Memiliki Akun? <a href="#">Daftar &raquo;</a>
+                Tidak Memiliki Akun? <a href="<?php echo BASE_URL.'/daftar';  ?>">Daftar &raquo;</a>
           </div>
         </div>
       </div>

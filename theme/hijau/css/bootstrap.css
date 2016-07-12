@@ -8,7 +8,8 @@
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 
 html {
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%
 }
@@ -1146,7 +1147,7 @@ html {
 }
 
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
     color: #333;
@@ -7007,7 +7008,7 @@ button.close {
 .carousel-inner {
     position: relative;
     width: 100%;
-    height: 300px;
+    /* height: 300px; */
     overflow: hidden
 }
 
@@ -7162,7 +7163,7 @@ button.close {
     width: 20px;
     height: 20px;
     margin-top: -10px;
-    font-family: serif
+    font-family: 'Lucida Grande';
 }
 
 .carousel-control .icon-prev:before {
@@ -7211,8 +7212,8 @@ button.close {
     bottom: 20px;
     left: 15%;
     z-index: 10;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    /*padding-top: 20px;
+    padding-bottom: 20px;*/
     color: #fff;
     text-align: center;
     text-shadow: 0 1px 2px rgba(0, 0, 0, .6)
@@ -7240,11 +7241,18 @@ button.close {
     .carousel-control .icon-next {
         margin-right: -15px
     }
+
     .carousel-caption {
-        right: 20%;
-        left: 20%;
-        padding-bottom: 30px
-    }
+        bottom: 0px;
+        color: #fff;
+        text-rendering: optimizelegibility;
+        text-shadow: 0 0 5px rgba(0,0,0,.8);
+        background-color: rgba(63,63,63,0.4);
+        width: 100%;
+        left: 0px;
+        padding-top: 0px;
+    }     
+   
     .carousel-indicators {
         bottom: 20px
     }

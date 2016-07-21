@@ -28,7 +28,7 @@
     <div class="row">
     	<div class="col-md-4"><div class="row">
            <div class="col-md-10"><?php getLatestNewsSidebarBox(); ?></div>
-           <div class="col-md-10"><h3>Categories:</h3><?php getCategories(); ?></div></div>
+           <div class="col-md-10"><h3>Kategori:</h3><?php getCategories(); ?></div></div>
         </div>
         <div class="col-md-8">
 			<div class="row">

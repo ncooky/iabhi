@@ -11,12 +11,25 @@
 <div class="container">
     <div class="row">
 <?php 
-
+$usrlgn = $this->session->userdata('userID');
 if(isset($usrlgn)) { 
-                if($this->session->userdata('status') == 1){
+               
 ?>    
 <!-- anggota -->
-    <div class="col-xs-12 col-sm-8 col-md-12">
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="row parent-menu">
+            <ul class="menu">
+                <li><a href="">Info Tender</a></li>
+                <li><a href="">Status KUM</a></li>
+                <li><a href="">Status Gelar Ahli Bangunan Hijau</a></li>
+                <li><a href="">Pengaturan Akun</a></li>
+                <li><a href="">Profil Pribadi</a></li>
+                <li><a href="">Portofolio</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-8">
+        <div class="row">
           <div class="searchbox">
             <div class="input-group input-group-sm">
               <input type="text" class="form-control" placeholder="cari anggota IABHI">
@@ -24,11 +37,17 @@ if(isset($usrlgn)) {
                 <button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
               </span>
             </div><!-- /input-group -->
-          </div><!-- /.col-lg-6 -->        
+          </div><!-- /.col-lg-6 --> 
+         </div>       
     </div>   
-            <?php }else{?>
-<!--  umum  -->
+            
 
+
+ 
+    
+    <?php }else{ ?>
+    
+<!--  umum  -->    
     <div class="col-xs-12 col-sm-8 col-md-12">
           <div class="searchbox">
             <div class="input-group input-group-sm">
@@ -38,10 +57,7 @@ if(isset($usrlgn)) {
               </span>
             </div><!-- /input-group -->
           </div><!-- /.col-lg-6 -->        
-    </div>    
-    
-    <?php }}else{ ?>
-    
+    </div>       
     <?php } ?>
 
 

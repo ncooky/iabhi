@@ -526,3 +526,25 @@ p {
     margin: 0 auto 15px;
     width: 170px;
 }
+
+.menu {
+    list-style-type: none;
+    padding: 5px 0;
+}
+
+.parent-menu {
+    padding: 0 15px;
+}
+.menu > li {
+    border-bottom: 1px solid #eee;
+    padding: 10px 10px;
+}
+
+.menu > li > a {
+    text-decoration: none;
+    color: grey;
+}
+
+.menu > li > a:hover {
+    color: black;
+}

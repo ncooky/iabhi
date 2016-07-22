@@ -1,5 +1,0 @@
-Currently I'm the only developer (ovidio AT users.sourceforge.net). I used code from some other projects that are
-listed in the website (http://bfexplorer.sourceforge.net). If you are interested in developing, helping with the
-documentation, making translations or offering new ideas please contact me (ovidio AT users.sourceforge.net).
-For version 0.0.7 Hannes Vaher (hannes AT linksys DOT ee) contributed an estonian translation.
-For version 0.0.9 Dan Fuglø (dan AT fuglo DOT com) contributed a daninsh translation.

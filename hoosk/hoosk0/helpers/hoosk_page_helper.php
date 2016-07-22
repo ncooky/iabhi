@@ -130,7 +130,7 @@
 			$posts .= '<div class="row">';
 			if ($c['postImage'] != "") {
 			$posts .= '<div class="col-md-3"><a href="/article/'.$c['postURL'].'"><img class="img-responsive" src="'.BASE_URL.'/images/'.$c['postImage'].'" alt="'.$c['postTitle'].'"/></a></div>';
-			$posts .= '<div class="col-md-9"><h3><a href="/article/'.$c['postURL'].'">'.$c['postTitle'].'</a></h3>';
+			$posts .= '<div class="col-md-9 news-side"><h3><a href="/article/'.$c['postURL'].'">'.$c['postTitle'].'</a></h3>';
 			$posts .= '<p class="meta">'.date_format($date, 'd/m/Y').'</p>';
 			$posts .= '<p>'.$c['postExcerpt'].'</p>';
 			$posts .= '<p><a class="btn btn-primary" href="/article/'.$c['postURL'].'">Read More</a></p>';
@@ -318,7 +318,7 @@
 			$posts .= '<div class="row">';
 			if ($c['postImage'] != "") {
 			$posts .= '<div class="col-md-3"><a href="/article/'.$c['postURL'].'"><img class="img-responsive" src="'.BASE_URL.'/images/'.$c['postImage'].'" alt="'.$c['postTitle'].'"/></a></div>';
-			$posts .= '<div class="col-md-9"><h3><a href="/article/'.$c['postURL'].'">'.$c['postTitle'].'</a></h3>';
+			$posts .= '<div class="col-md-9 news-side"><h3><a href="/article/'.$c['postURL'].'">'.$c['postTitle'].'</a></h3>';
 			$posts .= '<p class="meta">'.date_format($date, 'd/m/Y').'</p>';
 			$posts .= '<p>'.$c['postExcerpt'].'</p>';
 			$posts .= '<p><a class="btn btn-primary" href="/article/'.$c['postURL'].'">Read More</a></p>';

@@ -548,3 +548,7 @@ p {
 .menu > li > a:hover {
     color: black;
 }
+
+.news-side {
+    margin-top: -10px;
+}

@@ -23,7 +23,7 @@
         </div>
          <div class="col-md-8">
 			<div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12 news-side">
                 <div itemscope="" itemtype="http://schema.org/Article" class="entry-article">
                     <div class="bg-title-header"><h1><?php echo $page['pageTitle']; ?></h1></div>
                     <div class="bg-entry-header">
